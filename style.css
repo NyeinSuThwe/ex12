@@ -264,4 +264,37 @@ blockquote cite{
 #contact .email{ text-align: center; }
 #contact .small{ margin-top: var(--gap-xs); }
 
+  #site-footer{
+  border-top: 1px solid var(--line);
+  padding-block: 32px;
+}
+.footer-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-md);
+}
+.footer-links a{
+  text-decoration: none;
+  margin-right: 16px;
+}
+.footer-links a:hover{ color: var(--accent); }
+.copyright{
+  color: var(--muted);
+  font-size: .9rem;
+  text-align: right;
+}
+@media (max-width: 639.98px){
+  .primary-nav a{ margin-left: 12px; }
+  .footer-row{ flex-direction: column; align-items: flex-start; }
+  .copyright{ text-align: left; }
+}
+/* Avoid accidental 100vw horizontal scrolling */
+body { overflow-x: hidden; }
+
+/* Make sure figures or wide elements don’t break the layout */
+:where(.wrapper) > :where(.work-grid, .services-list, .steps){ overflow: visible; }
+
+  
+
   
