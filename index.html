@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://github.com/favicon.ico" />
-    
-    <!-- Change the name of the company here -->
-    <title>Design Company Name</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://github.com/favicon.ico" />
+  <title>Pixel & Paper — Design that feels human</title>
+  <meta name="description" content="Pixel & Paper is a small studio blending analog craft with clean digital systems." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Pixel & Paper" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <meta
-      name="description"
-      content="Fictional dog-owned design company"
-    />
+  <header id="site-header">
+    <div class="wrapper header-row">
+      <a class="brand" href="#top">Pixel &amp; Paper</a>
+      <nav aria-label="Primary" class="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Doggone Design" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://github.com/" />
-    <meta name="twitter:card" content="summary" />
-    
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>    
-    </header>
-    <main>
-    </main>  
-    <footer>
-    </footer>
-  </body>
+  <main id="main">
+    <section id="hero" class="section" aria-labelledby="hero-title"></section>
+    <section id="services" class="section" aria-labelledby="services-title"></section>
+    <section id="work" class="section" aria-labelledby="work-title"></section>
+    <section id="process" class="section" aria-labelledby="process-title"></section>
+    <section id="testimonials" class="section" aria-labelledby="testimonials-title"></section>
+    <section id="contact" class="section" aria-labelledby="contact-title"></section>
+  </main>
+
+  <footer id="site-footer" class="section" aria-label="Footer">
+    <div class="wrapper footer-row">
+      <nav aria-label="Secondary" class="footer-links"></nav>
+      <p class="copyright">© <span id="year"></span> Pixel &amp; Paper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // year filler (ok to keep; no CSS yet)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
