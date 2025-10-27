@@ -46,3 +46,59 @@ a { color: inherit; }
   --maxw: 1100px;
   --header-h: 72px;
   --header-offset: calc(var(--header-h) + 32px);
+
+html { font-size: var(--fs-body); }
+
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+h1,h2,h3{ line-height: 1.2; margin: 0 0 var(--gap-sm); }
+h1{
+  font-family: Fraunces, Georgia, "Times New Roman", Times, serif;
+  font-size: var(--fs-hero);
+  font-weight: 700;
+}
+h2{
+  font-family: Fraunces, Georgia, "Times New Roman", Times, serif;
+  font-size: var(--fs-h2);
+  font-weight: 700;
+}
+h3{ font-size: var(--fs-h3); }
+
+p{ margin: 0 0 var(--gap-md); }
+.small{ font-size: .9rem; color: var(--muted); }
+.eyebrow{ letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-size: .8rem; }
+.lead{ color: var(--muted); font-size: 1.05rem; }
+
+.wrapper{
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 28px);
+}
+
+.section{ padding-block: clamp(48px, 8vw, 96px); }
+
+.stack > * + *{ margin-top: var(--gap-md); }
+
+.grid-2{
+  display: grid;
+  gap: var(--gap-lg);
+  grid-template-columns: 1fr;
+}
+.grid-3{
+  display: grid;
+  gap: var(--gap-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 980px){
+  .grid-2{ grid-template-columns: 1.2fr .8fr; }
+  .grid-3{ grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Make long text comfortable to read */
+.section :where(p){ max-width: 70ch; }
