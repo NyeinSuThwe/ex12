@@ -106,9 +106,9 @@ main{ padding-top:0 }
 
 /* Hero — plain block instead of gradient */
 #hero .hero-media{
-  min-height:180px;
-  border-radius:var(--radius);
-  background:#f3f3f3;   /* flat */
+  background: url("assets/team.png") center/cover no-repeat;
+  min-height: 220px;
+  border-radius: var(--radius);
 }
 
 /* Services — simple cards, no shadow */
