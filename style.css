@@ -15,3 +15,34 @@ a { color: inherit; }
 
 /* Prevent layout shifts on long words */
 :where(p, h1, h2, h3, h4, h5, h6) { overflow-wrap: anywhere; }
+:root{
+  /* Colors */
+  --bg: #ffffff;
+  --ink: #1e1e1e;
+  --muted: #57606a;
+  --line: #ececec;
+  --accent: #1ca3ec;
+
+  /* Radii / Shadows */
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+
+  /* Spacing rhythm */
+  --gap-2xs: 6px;
+  --gap-xs: 8px;
+  --gap-sm: 12px;
+  --gap-md: 20px;
+  --gap-lg: 32px;
+  --gap-xl: 52px;
+  --gap-2xl: 80px;
+
+  /* Typography */
+  --fs-hero: clamp(2rem, 3.6vw, 3rem);
+  --fs-h2: clamp(1.5rem, 2.2vw, 2rem);
+  --fs-h3: 1.125rem;
+  --fs-body: 16px;
+
+  /* Layout */
+  --maxw: 1100px;
+  --header-h: 72px;
+  --header-offset: calc(var(--header-h) + 32px);
