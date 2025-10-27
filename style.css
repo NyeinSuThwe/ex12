@@ -102,3 +102,34 @@ p{ margin: 0 0 var(--gap-md); }
 
 /* Make long text comfortable to read */
 .section :where(p){ max-width: 70ch; }
+
+  #site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.header-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-h);
+}
+.brand{
+  text-decoration: none;
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 700;
+}
+.primary-nav a{
+  text-decoration: none;
+  margin-left: clamp(10px, 2vw, 18px);
+  padding: 6px 4px;
+  border-radius: 8px;
+}
+.primary-nav a:hover{ color: var(--accent); }
+
+/* Compensate for sticky header height per Protocol v5 */
+main{ padding-top: var(--header-offset); }
+
